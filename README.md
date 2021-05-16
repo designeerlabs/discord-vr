@@ -1,6 +1,9 @@
 # Discord VR
 This is an app that overlays voice chat from Discord into any SteamVR app
 
+# Video tutorial
+https://www.youtube.com/watch?v=cOtOMIbZrRM
+
 # Prerequisites
 Discord must be installed and running
 
