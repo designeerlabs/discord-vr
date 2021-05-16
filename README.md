@@ -7,7 +7,7 @@ Discord must be installed and running
 You must have the latest version of Google Chrome installed
 
 # How to
-Download the .zip file from releases
+Download the .zip file from [releases](https://github.com/designeerlabs/discord-vr/releases)
 
 Extract the contents and run DiscordVR.exe
 
