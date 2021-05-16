@@ -28,4 +28,4 @@ If you are already in a channel, you must be in the selected channel for the voi
 You can select different options under "Attach" and "Align" to place the voice data where you want
 
 # Join the Discord
-KnCEf5jCDt
+[https://discord.gg/KnCEf5jCDt](https://discord.gg/KnCEf5jCDt)
