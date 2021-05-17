@@ -1,0 +1,11 @@
+﻿{
+    "settings": {
+        "opacity": 0.8,
+        "scale": 1.0,
+        "show-names": true,
+        "drag": 0.1,
+        "attach-to": "head",
+        "position": { },
+        "rotation": { }
+    }
+}

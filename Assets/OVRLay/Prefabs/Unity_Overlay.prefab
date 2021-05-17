@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1948261899652042}
+  m_IsPrefabParent: 1
+--- !u!1 &1948261899652042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4880528273576866}
+  - component: {fileID: 114333705838659940}
+  - component: {fileID: 23329836617750994}
+  - component: {fileID: 33002279350541476}
+  m_Layer: 0
+  m_Name: Unity_Overlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4880528273576866
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948261899652042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23329836617750994
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948261899652042}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33002279350541476
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948261899652042}
+  m_Mesh: {fileID: 0}
+--- !u!114 &114333705838659940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948261899652042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585696d8a97bfc347a4c14b5c0c35193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steamVRHandlerPrefab: {fileID: 1453789531287198, guid: 78fc84ce601bcc442a58b4cc525615b6,
+    type: 2}
+  autoUpdateOverlay: 1
+  simulateInEditor: 1
+  overlayTexture: {fileID: 2800000, guid: c72245f59d343c242a7eff8f15ae4143, type: 3}
+  cameraForTexture: {fileID: 0}
+  renderTexWidthOverride: 0
+  renderTexHeightOverride: 0
+  dontForceRenderTexture: 0
+  dashboardThumbnailTexture: {fileID: 0}
+  highQualityRenderTex: 1
+  cameraForTextureWidthOverride: 0
+  cameraForTextureHeightOverride: 0
+  opacity: 1
+  widthInMeters: 1
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
+  useChaperoneColor: 0
+  enableRenderModel: 0
+  renderModelPath: 
+  renderModelColor: {r: 1, g: 1, b: 1, a: 1}
+  sideBySideParallel: 0
+  sideBySideCrossed: 0
+  overlayName: Unity In-Game Overlay
+  overlayKey: unity_example_ingame_overlay
+  isDashboardOverlay: 0
+  highQuality: 0
+  isVisible: 1
+  onlyShowInDashboard: 0
+  lastVisible: 1
+  deviceToTrack: 0
+  customDeviceIndex: 0
+  enableSimulatedMouse: 0
+  simulateUnityMouseInput: 0
+  canvasGraphicsCaster: {fileID: 0}
+  mouseScale: {x: 1, y: 1}
+  mousePos: {x: 0, y: 0}
+  mouseDown: 0
+  mouseDragging: 0
+  mouseDownTime: 0

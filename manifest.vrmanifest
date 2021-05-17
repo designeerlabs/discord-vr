@@ -1,0 +1,17 @@
+{
+    "source" : "builtin",
+    "applications" : [
+        {
+            "app_key" : "steam.overlay.3472674",
+            "launch_type" : "binary",
+            "binary_path_windows" : "DiscordVROverlay.exe",
+            "is_dashboard_overlay" : false,
+            "strings" : {
+                "en_us" : {
+                    "name" : "Discord VR Overlay",
+                    "description" : "Overlays Discord voice chat into SteamVR"
+                }
+            }
+        }
+    ]
+}
