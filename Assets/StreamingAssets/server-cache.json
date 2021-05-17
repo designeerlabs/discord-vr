@@ -1,0 +1,732 @@
+{
+    "servers" : [
+        {
+            "name" : "da bois\r",
+            "channels" : [
+                "General\r",
+                "sc2-boyz"
+            ]
+        },
+        {
+            "name" : "Best discord in the world\r",
+            "channels" : [
+                "VC (creatives)"
+            ]
+        },
+        {
+            "name" : "pixelcraft\r",
+            "channels" : [
+                "music\r",
+                "minecraft\r",
+                "moderator"
+            ]
+        },
+        {
+            "name" : "Matthew Stafford Fan Club\r",
+            "channels" : [
+                "General\r",
+                "super cool channel thats also super exclusive"
+            ]
+        },
+        {
+            "name" : "MWL\r",
+            "channels" : [
+                "Pavlov VC\r",
+                "not pavlov vc\r",
+                "Buddy ඞ\r",
+                "X being single\r",
+                "ඞඞඞඞඞඞඞඞඞඞඞ\r",
+                "CSGO Comp LFG\r",
+                "Blacklist Voice"
+            ]
+        },
+        {
+            "name" : "REKT\r",
+            "channels" : [
+                "AFK (Muted)\r",
+                "Valorant\r",
+                "Survival Games\r",
+                "🔵Blue\r",
+                "🔴Red\r",
+                "Casting\r",
+                "🟦REKT\r",
+                "🟥REKT\r",
+                "Onward Scrubs"
+            ]
+        },
+        {
+            "name" : "Flying Kiwis\r",
+            "channels" : [
+                "Blue Voice Channel\r",
+                "Red Voice Channel\r",
+                "Admin\r",
+                "kiwis team\r",
+                "General"
+            ]
+        },
+        {
+            "name" : "Tekxit\r",
+            "channels" : [
+                "General 1\r",
+                "General 2\r",
+                "General 3\r",
+                "General 165"
+            ]
+        },
+        {
+            "name" : "DesigneerLabs\r",
+            "channels" : [
+                "general\r",
+                "internal"
+            ]
+        },
+        {
+            "name" : "r/unixporn\r",
+            "channels" : [
+                "voice[grapetv]\r",
+                "voice[gamer theory]\r",
+                "voice[maybe]\r",
+                "voice[shhh]"
+            ]
+        },
+        {
+            "name" : "VR Club\r",
+            "channels" : [
+                "Member Count: 3613\r",
+                "Ⓐ ▷ Squad 1\r",
+                "Ⓒ ▷ Community Meetups\r",
+                "Ⓓ ▷ General\r",
+                "Ⓖ ▷ AFK\r",
+                "Ⓑ ▷ Squad 2\r",
+                "Ⓔ ▷ Music\r",
+                "Ⓕ ▷ Minecraft\r",
+                "dev-speaks"
+            ]
+        },
+        {
+            "name" : "Polaris\r",
+            "channels" : [
+                "Polaris 1\r",
+                "Polaris 2\r",
+                "AFK\r",
+                "scrub voice\r",
+                "scrub voice 2"
+            ]
+        },
+        {
+            "name" : "Ne-row's Lounge\r",
+            "channels" : [
+                "🍻The Tavern\r",
+                "🤺Pavlov 2\r",
+                "VAIL VR Team 1\r",
+                "🎮Other Games 1\r",
+                "VAIL VR Team 2\r",
+                "🤺Pavlov RED team\r",
+                "🎶Music\r",
+                "🧟 AFK\r",
+                "🤺Pavlov 1\r",
+                "🤺Rainbow Six SIEGE\r",
+                "🤺Pavlov BLUE team\r",
+                "🎮Other Games 2"
+            ]
+        },
+        {
+            "name" : "Vrmassive\r",
+            "channels" : [
+                "Phasmophobia\r",
+                "2- (Blue) NA\r",
+                "General hang out\r",
+                "Red- (EU)\r",
+                "hanging out for any game\r",
+                "Music Room\r",
+                "Blue- (EU)\r",
+                "1- (Red) NA\r",
+                "Streaming Channel"
+            ]
+        },
+        {
+            "name" : "Arctic VR\r",
+            "channels" : [
+                "Hangout\r",
+                "1 - Red\r",
+                "2 - Blue\r",
+                "4\r",
+                "3\r",
+                "(AFK)"
+            ]
+        },
+        {
+            "name" : "WebXR\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "Night Shift\r",
+            "channels" : [
+                "🎧 Night Shift Fight Club 2\r",
+                "🎧 General 1\r",
+                "night main\r",
+                "🎧the make out room\r",
+                "🎧 Red Team\r",
+                "User Count: 142\r",
+                "Member Count: 145\r",
+                "🎧 Blue Team\r",
+                "Bot Count: 3"
+            ]
+        },
+        {
+            "name" : "Hellabaloo\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "THE BATTLEGROUNDS\r",
+            "channels" : [
+                "General\r",
+                "OMEGA\r",
+                "🔵BLUE TEAM🔵\r",
+                "🔴RED TEAM🔴"
+            ]
+        },
+        {
+            "name" : "OpenVR Advanced Settings\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "The Underworld\r",
+            "channels" : [
+                "valorant\r",
+                "family pub 1\r",
+                "watch party\r",
+                "Blue\r",
+                "CSGO\r",
+                "Streaming (Do Not Disturb)\r",
+                "Red\r",
+                "blackwake\r",
+                "family pub 2\r",
+                "Chill\r",
+                "Pogs\r",
+                "AFK\r",
+                "im live you fems Streaming (Family Only)"
+            ]
+        },
+        {
+            "name" : "Learning (@chipro)\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "NerdSpeak\r",
+            "channels" : [
+                "SIMPS ONLY\r",
+                "EPIC GAMERZ\r",
+                "shadowbanned\r",
+                "staff only u noobs\r",
+                "Member Count: 70639\r",
+                "amazon/newegg-bot-alerts\r",
+                "The Circus"
+            ]
+        },
+        {
+            "name" : "VR Esports Brasil\r",
+            "channels" : [
+                "One True Team\r",
+                "Echo Arena\r",
+                "Transmissão\r",
+                "Unidos da M4\r",
+                "Population 1\r",
+                "Livestream 🎬\r",
+                "Contractors\r",
+                "Onward\r",
+                "Chat dos Testers 3\r",
+                "Shifted VR\r",
+                "Population 2\r",
+                "Pavlov Shack Quest\r",
+                "Chat dos Testers 1\r",
+                "Outros Jogos\r",
+                "VRChat\r",
+                "Poker\r",
+                "Lobby 🎧\r",
+                "Narração\r",
+                "Sports Bar VR\r",
+                "Madrugas\r",
+                "Wanted\r",
+                "Star Wars Squadrons\r",
+                "Mamutes\r",
+                "Pavlov PC\r",
+                "Home Office 💻\r",
+                "Space Junkies\r",
+                "Phasmophobia\r",
+                "Chat dos Testers 2\r",
+                "GangV\r",
+                "Beat Saber Multiplayer\r",
+                "Ouvir Música 🎶"
+            ]
+        },
+        {
+            "name" : "IGDA\r",
+            "channels" : [
+                "Meet and Greet\r",
+                "Live Stream Discussion\r",
+                "General"
+            ]
+        },
+        {
+            "name" : "⛄CU Gaming & Esports\r",
+            "channels" : [
+                "🎵 Music\r",
+                "💤 AFK\r",
+                "🔴 Lounge\r",
+                "🔊 Party Voice (+)"
+            ]
+        },
+        {
+            "name" : "Virtual Reality\r",
+            "channels" : [
+                "Create Minecraft Voice\r",
+                "Proximity Voice\r",
+                "AFK\r",
+                "Click to Create Voice\r",
+                "events-voice"
+            ]
+        },
+        {
+            "name" : "VR for the Bois\r",
+            "channels" : [
+                "「🔊」Voice Chat\r",
+                "Red\r",
+                "Blue🔵\r",
+                "「🔇」AFK\r",
+                "Cold War Zombies\r",
+                "Among us\r",
+                "(LIVE)🔴\r",
+                "「🔊」UnHoly Land\r",
+                "「🔊」Gulag"
+            ]
+        },
+        {
+            "name" : "the voiders\r",
+            "channels" : [
+                "voice 1\r",
+                "voice 2\r",
+                "voice 3\r",
+                "voice 4"
+            ]
+        },
+        {
+            "name" : "The Unstable Stable\r",
+            "channels" : [
+                "Streaming (TOS Fucking Friendly)\r",
+                "Bad Cletorus Jail\r",
+                "gen pop too\r",
+                "Public\r",
+                "General\r",
+                "Music"
+            ]
+        },
+        {
+            "name" : "Pavlov VR\r",
+            "channels" : [
+                "Streaming Channel\r",
+                "Pavlov General"
+            ]
+        },
+        {
+            "name" : "Pavlov VRML\r",
+            "channels" : [
+                "Match #1\r",
+                "Casters #4\r",
+                "Match #2\r",
+                "Match #5\r",
+                "Match #4\r",
+                "Match #3\r",
+                "Casters #3\r",
+                "General\r",
+                "Casters #1\r",
+                "Casters #2"
+            ]
+        },
+        {
+            "name" : "diamonds mine\r",
+            "channels" : [
+                "creeper aw man"
+            ]
+        },
+        {
+            "name" : "TAINTED",
+            "channels" : [
+                "General\r",
+                "Captain's Love Nest"
+            ]
+        },
+        {
+            "name" : "da bois\r",
+            "channels" : [
+                "General\r",
+                "sc2-boyz"
+            ]
+        },
+        {
+            "name" : "Best discord in the world\r",
+            "channels" : [
+                "VC (creatives)"
+            ]
+        },
+        {
+            "name" : "pixelcraft\r",
+            "channels" : [
+                "music\r",
+                "minecraft\r",
+                "moderator"
+            ]
+        },
+        {
+            "name" : "Matthew Stafford Fan Club\r",
+            "channels" : [
+                "General\r",
+                "super cool channel thats also super exclusive"
+            ]
+        },
+        {
+            "name" : "MWL\r",
+            "channels" : [
+                "Pavlov VC\r",
+                "not pavlov vc\r",
+                "Buddy ඞ\r",
+                "X being single\r",
+                "ඞඞඞඞඞඞඞඞඞඞඞ\r",
+                "CSGO Comp LFG\r",
+                "Blacklist Voice"
+            ]
+        },
+        {
+            "name" : "REKT\r",
+            "channels" : [
+                "AFK (Muted)\r",
+                "Valorant\r",
+                "Survival Games\r",
+                "🔵Blue\r",
+                "🔴Red\r",
+                "Casting\r",
+                "🟦REKT\r",
+                "🟥REKT\r",
+                "Onward Scrubs"
+            ]
+        },
+        {
+            "name" : "Flying Kiwis\r",
+            "channels" : [
+                "Blue Voice Channel\r",
+                "Red Voice Channel\r",
+                "Admin\r",
+                "kiwis team\r",
+                "General"
+            ]
+        },
+        {
+            "name" : "Tekxit\r",
+            "channels" : [
+                "General 1\r",
+                "General 2\r",
+                "General 3\r",
+                "General 165"
+            ]
+        },
+        {
+            "name" : "DesigneerLabs\r",
+            "channels" : [
+                "general\r",
+                "internal"
+            ]
+        },
+        {
+            "name" : "r/unixporn\r",
+            "channels" : [
+                "voice[grapetv]\r",
+                "voice[gamer theory]\r",
+                "voice[maybe]\r",
+                "voice[shhh]"
+            ]
+        },
+        {
+            "name" : "VR Club\r",
+            "channels" : [
+                "Member Count: 3613\r",
+                "Ⓐ ▷ Squad 1\r",
+                "Ⓒ ▷ Community Meetups\r",
+                "Ⓓ ▷ General\r",
+                "Ⓖ ▷ AFK\r",
+                "Ⓑ ▷ Squad 2\r",
+                "Ⓔ ▷ Music\r",
+                "Ⓕ ▷ Minecraft\r",
+                "dev-speaks"
+            ]
+        },
+        {
+            "name" : "Polaris\r",
+            "channels" : [
+                "Polaris 1\r",
+                "Polaris 2\r",
+                "AFK\r",
+                "scrub voice\r",
+                "scrub voice 2"
+            ]
+        },
+        {
+            "name" : "Ne-row's Lounge\r",
+            "channels" : [
+                "🍻The Tavern\r",
+                "🤺Pavlov 2\r",
+                "VAIL VR Team 1\r",
+                "🎮Other Games 1\r",
+                "VAIL VR Team 2\r",
+                "🤺Pavlov RED team\r",
+                "🎶Music\r",
+                "🧟 AFK\r",
+                "🤺Pavlov 1\r",
+                "🤺Rainbow Six SIEGE\r",
+                "🤺Pavlov BLUE team\r",
+                "🎮Other Games 2"
+            ]
+        },
+        {
+            "name" : "Vrmassive\r",
+            "channels" : [
+                "Phasmophobia\r",
+                "2- (Blue) NA\r",
+                "General hang out\r",
+                "Red- (EU)\r",
+                "hanging out for any game\r",
+                "Music Room\r",
+                "Blue- (EU)\r",
+                "1- (Red) NA\r",
+                "Streaming Channel"
+            ]
+        },
+        {
+            "name" : "Arctic VR\r",
+            "channels" : [
+                "Hangout\r",
+                "1 - Red\r",
+                "2 - Blue\r",
+                "4\r",
+                "3\r",
+                "(AFK)"
+            ]
+        },
+        {
+            "name" : "WebXR\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "Night Shift\r",
+            "channels" : [
+                "🎧 Night Shift Fight Club 2\r",
+                "🎧 General 1\r",
+                "night main\r",
+                "🎧the make out room\r",
+                "🎧 Red Team\r",
+                "User Count: 142\r",
+                "Member Count: 145\r",
+                "🎧 Blue Team\r",
+                "Bot Count: 3"
+            ]
+        },
+        {
+            "name" : "Hellabaloo\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "THE BATTLEGROUNDS\r",
+            "channels" : [
+                "General\r",
+                "OMEGA\r",
+                "🔵BLUE TEAM🔵\r",
+                "🔴RED TEAM🔴"
+            ]
+        },
+        {
+            "name" : "OpenVR Advanced Settings\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "The Underworld\r",
+            "channels" : [
+                "valorant\r",
+                "family pub 1\r",
+                "watch party\r",
+                "Blue\r",
+                "CSGO\r",
+                "Streaming (Do Not Disturb)\r",
+                "Red\r",
+                "blackwake\r",
+                "family pub 2\r",
+                "Chill\r",
+                "Pogs\r",
+                "AFK\r",
+                "im live you fems Streaming (Family Only)"
+            ]
+        },
+        {
+            "name" : "Learning (@chipro)\r",
+            "channels" : [
+                "General"
+            ]
+        },
+        {
+            "name" : "NerdSpeak\r",
+            "channels" : [
+                "SIMPS ONLY\r",
+                "EPIC GAMERZ\r",
+                "shadowbanned\r",
+                "staff only u noobs\r",
+                "Member Count: 70639\r",
+                "amazon/newegg-bot-alerts\r",
+                "The Circus"
+            ]
+        },
+        {
+            "name" : "VR Esports Brasil\r",
+            "channels" : [
+                "One True Team\r",
+                "Echo Arena\r",
+                "Transmissão\r",
+                "Unidos da M4\r",
+                "Population 1\r",
+                "Livestream 🎬\r",
+                "Contractors\r",
+                "Onward\r",
+                "Chat dos Testers 3\r",
+                "Shifted VR\r",
+                "Population 2\r",
+                "Pavlov Shack Quest\r",
+                "Chat dos Testers 1\r",
+                "Outros Jogos\r",
+                "VRChat\r",
+                "Poker\r",
+                "Lobby 🎧\r",
+                "Narração\r",
+                "Sports Bar VR\r",
+                "Madrugas\r",
+                "Wanted\r",
+                "Star Wars Squadrons\r",
+                "Mamutes\r",
+                "Pavlov PC\r",
+                "Home Office 💻\r",
+                "Space Junkies\r",
+                "Phasmophobia\r",
+                "Chat dos Testers 2\r",
+                "GangV\r",
+                "Beat Saber Multiplayer\r",
+                "Ouvir Música 🎶"
+            ]
+        },
+        {
+            "name" : "IGDA\r",
+            "channels" : [
+                "Meet and Greet\r",
+                "Live Stream Discussion\r",
+                "General"
+            ]
+        },
+        {
+            "name" : "⛄CU Gaming & Esports\r",
+            "channels" : [
+                "🎵 Music\r",
+                "💤 AFK\r",
+                "🔴 Lounge\r",
+                "🔊 Party Voice (+)"
+            ]
+        },
+        {
+            "name" : "Virtual Reality\r",
+            "channels" : [
+                "Create Minecraft Voice\r",
+                "Proximity Voice\r",
+                "AFK\r",
+                "Click to Create Voice\r",
+                "events-voice"
+            ]
+        },
+        {
+            "name" : "VR for the Bois\r",
+            "channels" : [
+                "「🔊」Voice Chat\r",
+                "Red\r",
+                "Blue🔵\r",
+                "「🔇」AFK\r",
+                "Cold War Zombies\r",
+                "Among us\r",
+                "(LIVE)🔴\r",
+                "「🔊」UnHoly Land\r",
+                "「🔊」Gulag"
+            ]
+        },
+        {
+            "name" : "the voiders\r",
+            "channels" : [
+                "voice 1\r",
+                "voice 2\r",
+                "voice 3\r",
+                "voice 4"
+            ]
+        },
+        {
+            "name" : "The Unstable Stable\r",
+            "channels" : [
+                "Streaming (TOS Fucking Friendly)\r",
+                "Bad Cletorus Jail\r",
+                "gen pop too\r",
+                "Public\r",
+                "General\r",
+                "Music"
+            ]
+        },
+        {
+            "name" : "Pavlov VR\r",
+            "channels" : [
+                "Streaming Channel\r",
+                "Pavlov General"
+            ]
+        },
+        {
+            "name" : "Pavlov VRML\r",
+            "channels" : [
+                "Match #1\r",
+                "Casters #4\r",
+                "Match #2\r",
+                "Match #5\r",
+                "Match #4\r",
+                "Match #3\r",
+                "Casters #3\r",
+                "General\r",
+                "Casters #1\r",
+                "Casters #2"
+            ]
+        },
+        {
+            "name" : "diamonds mine\r",
+            "channels" : [
+                "creeper aw man"
+            ]
+        },
+        {
+            "name" : "TAINTED",
+            "channels" : [
+                "General\r",
+                "Captain's Love Nest"
+            ]
+        }
+    ]
+}

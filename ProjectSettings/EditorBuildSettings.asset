@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Main.unity
     guid: 7cf0557579ba16846a94506d7884b6df
   - enabled: 1
-    path: Assets/NewUI/NewUI.unity
+    path: Assets/Main.unity
     guid: 6059c4986c4334648be0fb7cdd00d70c
   m_configObjects: {}

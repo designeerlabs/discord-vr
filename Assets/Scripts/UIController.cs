@@ -26,11 +26,6 @@ namespace DiscordVROverlay
             overlay.opacity = opacitySlider.value;
         }
 
-        public void ChangeURL()
-        {
-            DiscordInterface.instance.ChangeURL(urlInput.text);
-        }
-
         public void ChangeServers(string[] s)
         {
             servers = s;
