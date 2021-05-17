@@ -1,7 +1,7 @@
 # Discord VR
 This is an app that overlays voice chat from Discord into any SteamVR app
 
-![](https://github.com/designeerlabs/discord-vr/blob/main/DiscordVRScreenshot.PNG)
+![](https://github.com/designeerlabs/discord-vr/blob/main/DiscordVRScreenshot0.PNG)
 
 # Video tutorial
 https://www.youtube.com/watch?v=cOtOMIbZrRM
