@@ -6,6 +6,11 @@
 /Assets/AssetStoreTools*
 /Assets/RenderModel_Tests/vr_controller_vive_1_5
 
+# Don't include streaming assets
+/Assets/StreamingAssets/chromedriver.exe
+# /Assets/StreamingAssets/config.json
+/Assets/StreamingAssets/server-cache.json
+
 # Visual Studio 2015 cache directory
 /.vs/
 /.vscode/

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DiscordVROverlay.SeleniumInterface;
+using SimpleJSON;
+using System.IO;
 
 namespace DiscordVROverlay
 {
@@ -28,6 +30,9 @@ namespace DiscordVROverlay
         public Transform handL;
         public Transform handR;
 
+        public string configFileName;
+        public string version;
+
         private bool speakingOnly = false;
 
         void Awake()
@@ -35,14 +40,19 @@ namespace DiscordVROverlay
             attachSwitch.onSwitch.AddListener(ChangeAttach);
             alignSwitch.onSwitch.AddListener(ChangeAlign);
 
-            ChangeOpacity();
-            ChangeScale();
-            ChangeDrag();
+            // ChangeOpacity();
+            // ChangeScale();
+            // ChangeDrag();
         }
 
         void Start()
         {
-            ChangeAttach(0);
+            LoadConfig(Application.streamingAssetsPath +"/"+ configFileName);
+        }
+
+        public void ChangeAttachForce(int i)
+        {
+            attachSwitch.SelectForce(i);
         }
 
         public void ChangeAttach(int i)
@@ -167,6 +177,11 @@ namespace DiscordVROverlay
             overlay.transform.localEulerAngles = newRotation;
         }
 
+        public void ChangeOpacityForce(float opacity)
+        {
+            opacitySlider.value = opacity;
+        }
+
         public void ChangeOpacity()
         {
             overlay.opacity = opacitySlider.value;
@@ -175,12 +190,16 @@ namespace DiscordVROverlay
         public void ChangeScaleForce(float scale)
         {
             scaleSlider.value = scale / 2f;
-            ChangeScale();
         }
 
         public void ChangeScale()
         {
             overlay.widthInMeters = scaleSlider.value * 2f;
+        }
+
+        public void ChangeDragForce(float drag)
+        {
+            dragSlider.value = drag;
         }
 
         public void ChangeDrag()
@@ -214,6 +233,43 @@ namespace DiscordVROverlay
             {
                 textShowNames.text = "Show Names";
             }
+        }
+
+        public void LoadConfig(string configPath)
+        {
+            if (configPath == null || !File.Exists(configPath)) return;
+            JSONNode config = JSON.Parse(File.ReadAllText(configPath));
+            if (config["version"] != "1.0.1") return;
+            JSONNode configSettings = config["settings"];
+            print("asdfasdf");
+            // ChangeAttachForce(configSettings["attach-to"]);
+            ChangeAlignForce(configSettings["align-to"]);
+            ChangeOpacityForce(configSettings["opacity"]);
+            ChangeDragForce(configSettings["drag"]);
+        }
+
+        public void SetConfig(string configPath)
+        {
+            JSONNode config = new JSONObject();
+            config["version"] = version;
+            config["auto-launch"] = false;
+            config["join-on-launch"] = false;
+            config["settings"] = new JSONObject();
+            JSONNode configSettings = config["settings"];
+            configSettings["attach-to"] = attachSwitch.currentIndex;
+            configSettings["align-to"] = alignSwitch.currentIndex;
+            configSettings["opacity"] = opacitySlider.value;
+            configSettings["scale"] = scaleSlider.value;
+            configSettings["drag"] = dragSlider.value;
+
+            config["favorite-channels"] = new JSONArray();
+
+            File.WriteAllText(configPath, config.ToString(4));
+        }
+
+        void OnDestroy()
+        {
+            SetConfig(Application.streamingAssetsPath +"/"+ configFileName);
         }
     }
 }

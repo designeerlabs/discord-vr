@@ -46,7 +46,7 @@ namespace DiscordVROverlay
             WebClient mywebClient = new WebClient();
             mywebClient.DownloadFile(chromedriverDownloadUrl, zipPath);
 
-            string chromedriverExePath = driverPath + @"\chromedriver.exe";
+            string chromedriverExePath = driverPath +@"\chromedriver.exe";
             string oldDriverPath = driverPath +@"\OldDrivers";
             if (File.Exists(chromedriverExePath))
             {

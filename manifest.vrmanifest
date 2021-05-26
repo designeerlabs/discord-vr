@@ -1,0 +1,16 @@
+{
+	"source" : "builtin",
+	"applications": [{
+		"app_key": "designeerlabs.overlay.discord",
+		"launch_type": "binary",
+		"binary_path_windows": "DiscordVR.exe",
+		"is_dashboard_overlay": true,
+
+		"strings": {
+			"en_us": {
+				"name": "Discord VR",
+				"description": "Discord voice chat overlay"
+			}
+		}
+	}]
+}

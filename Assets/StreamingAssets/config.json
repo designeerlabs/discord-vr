@@ -1,11 +1,14 @@
-﻿{
-    "settings": {
-        "opacity": 0.8,
-        "scale": 1.0,
-        "show-names": true,
-        "drag": 0.1,
-        "attach-to": "head",
-        "position": { },
-        "rotation": { }
-    }
+{
+    "version" : "1.0.1",
+    "auto-launch" : false,
+    "join-on-launch" : false,
+    "settings" : {
+        "attach-to" : 0,
+        "align-to" : 2,
+        "opacity" : 0.116603299975395,
+        "scale" : 0.25,
+        "drag" : 0.551282167434692
+    },
+    "favorite-channels" : [
+    ]
 }

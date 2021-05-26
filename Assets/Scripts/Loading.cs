@@ -48,26 +48,21 @@ namespace DiscordVROverlay
 
         public void AddLoading(string s)
         {
-            print("added loading "+ s);
             loadingScreens.Add(s);
             UpdateLoading();
         }
 
         public void RemoveLoading(string s)
         {
-            print("removed loading "+ s);
             loadingScreens.Remove(s);
             UpdateLoading();
         }
 
         private void UpdateLoading()
         {
-            print("updating loading "+ loadingScreens.Count);
             if (loadingScreens.Count > 0)
             {
-                print("updating loading BEFORE");
                 Enable(true);
-                print("updating loading AFTERRRR AFTERR");
                 currentLoading = loadingScreens[loadingScreens.Count-1];
             }
             else
@@ -78,7 +73,6 @@ namespace DiscordVROverlay
 
         private void Enable(bool b)
         {
-            print("updating loading AFTER");
             try
             {
                 loadingChild.SetActive(b);
@@ -87,7 +81,6 @@ namespace DiscordVROverlay
             {
                 print("ERROR "+ e.Message);
             }
-            print("ENABLE "+ b + " and "+ loadingChild.activeSelf);
         }
     }
 }

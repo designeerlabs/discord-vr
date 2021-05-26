@@ -46,6 +46,7 @@ namespace DiscordVROverlay
 
         public void SelectForce(int i)
         {
+            print("select force "+ i);
             Select(options.GetChild(i).GetComponent<Button>());
         }
 

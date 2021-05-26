@@ -114,7 +114,7 @@ public class Unity_SteamVR_Handler : MonoBehaviour
 	public void VREventHandler(VREvent_t e)
 	{
 		if(debugLog)
-			Debug.Log("VR Event: " + e);
+			Debug.Log("VR Event: " + e +" "+ e.eventType); // 200 trigger
 	}
 
 	bool SteamVRStartup()

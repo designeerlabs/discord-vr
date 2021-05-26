@@ -4,67 +4,100 @@ using UnityEngine;
 using SimpleJSON;
 using Valve.VR;
 using System.IO;
+using System;
 
-public class Installer : MonoBehaviour
+namespace DiscordVROverlay
 {
-    public static Installer instance;
-
-    public Unity_SteamVR_Handler svrh;
-
-    [SerializeField]
-    private string manifestFile = "manifest.vrmanifest";
-    [SerializeField]
-    private string appKey = "3472673";
-
-    private void Awake()
+    public class Installer : MonoBehaviour
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(instance);
-        }
-        Debug.Log("Started at "+ Time.time);
-    }
+        public static Installer instance;
 
-    public void Startup()
-    {
-        CVRApplications app = svrh.ovrHandler.Applications;
-        string manifestPath = Application.dataPath +"/../"+ manifestFile;
-        app.RemoveApplicationManifest(manifestPath);
-        app.RemoveApplicationManifest(Application.persistentDataPath+"/"+manifestFile);
+        public Unity_SteamVR_Handler svrh;
 
-        bool manifestExists = File.Exists(manifestPath);
-        if (!manifestExists)
+        [SerializeField]
+        private string manifestFile = "manifest.vrmanifest";
+        [SerializeField]
+        private string appKey = "designeerlabs.overlay.discord";
+
+        private string manifestPath;
+
+        private void Awake()
         {
-            JSONNode json = new JSONObject();
-            json["source"] = "builtin";
-            JSONNode application = new JSONObject();
-            application["app_key"] = "steam.overlay."+ appKey;
-            application["launch_type"] = "binary";
-            application["binary_path_windows"] = "DiscordVROverlay.exe";
-            application["is_dashboard_overlay"] = false;
-            application["strings"]["en_us"]["name"] = "Discord VR Overlay";
-            application["strings"]["en_us"]["description"] = "Overlays Discord voice chat into SteamVR";
-            json["applications"][0] = application;
-
-            StreamWriter file = File.CreateText(manifestPath);
-            file.Write(json.ToString(4));
-            file.Close();
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(instance);
+            }
         }
 
-        bool installed = app.IsApplicationInstalled("steam.overlay."+ appKey);
-        Debug.Log("App installed state is "+ installed +".");
-        if (!installed)
+        void Start()
         {
-            EVRApplicationError evrae;
-            Debug.Log("Adding manifest.");
-            evrae = app.AddApplicationManifest(manifestPath, false);
-            Debug.Log("Manifest file added with "+ evrae);
-            evrae = app.SetApplicationAutoLaunch("steam.overlay."+ appKey, true);
-            Debug.Log("Aplication auto launched with "+ evrae);
+            manifestPath = Path.GetFullPath(Path.Combine(Application.dataPath, @"..\")) + manifestFile;
+            ErrorManager.instance.AddError("path: "+ manifestPath);
+            #if !UNITY_EDITOR
+            CreateManifestFile();
+            #endif
+        }
+
+        private void CreateManifestFile()
+        {
+            bool manifestExists = File.Exists(manifestPath);
+            if (!manifestExists)
+            {
+                JSONNode json = new JSONObject();
+                json["source"] = "builtin";
+                JSONNode application = new JSONObject();
+                application["app_key"] = appKey;
+                application["launch_type"] = "binary";
+                application["binary_path_windows"] = "DiscordVR.exe";
+                application["is_dashboard_overlay"] = false;
+                application["strings"]["en_us"]["name"] = "Discord VR";
+                application["strings"]["en_us"]["description"] = "Overlays Discord voice chat into SteamVR";
+                json["applications"][0] = application;
+
+                StreamWriter file = File.CreateText(manifestPath);
+                file.Write(json.ToString(4));
+                file.Close();
+            }
+        }
+
+        public void RemoveAsSteamVRPlugin()
+        {
+            try
+            {
+                CVRApplications app = svrh.ovrHandler.Applications;
+                app.RemoveApplicationManifest(manifestPath);
+            }
+            catch (Exception e)
+            {
+                ErrorManager.instance.AddError("ERROR: "+ e.Message);
+            }
+        }
+
+        public void AddAsSteamVRPlugin()
+        {
+            try
+            {
+                ErrorManager.instance.AddError("started add");
+                CVRApplications app = svrh.ovrHandler.Applications;
+                bool installed = app.IsApplicationInstalled(appKey);
+                ErrorManager.instance.AddError("installed: "+ installed);
+                if (!installed)
+                {
+                    EVRApplicationError evrae;
+                    evrae = app.AddApplicationManifest(manifestPath, false);
+                    ErrorManager.instance.AddError("add: "+ evrae);
+                    evrae = app.SetApplicationAutoLaunch(appKey, true);
+                    ErrorManager.instance.AddError("autolaunch: "+ evrae);
+                }
+            }
+            catch (Exception e)
+            {
+                ErrorManager.instance.AddError("ERROR: "+ e.Message);
+            }
         }
     }
 }
@@ -73,14 +106,14 @@ public class Installer : MonoBehaviour
 {
 	"source" : "builtin",
 	"applications": [{
-		"app_key": "steam.overlay.3472673",
+		"app_key": "designeerlabs.overlay.discord",
 		"launch_type": "binary",
-		"binary_path_windows": "AdvancedSettings.exe",
+		"binary_path_windows": "DiscordVR.exe",
 		"is_dashboard_overlay": true,
 
 		"strings": {
 			"en_us": {
-				"name": "Discord VR Overlay",
+				"name": "Discord VR",
 				"description": "Overlays Discord voice chat into SteamVR"
 			}
 		}
