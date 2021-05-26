@@ -11,6 +11,9 @@
 # /Assets/StreamingAssets/config.json
 /Assets/StreamingAssets/server-cache.json
 
+# Don't include manifest
+/manifest.vrmanifest
+
 # Visual Studio 2015 cache directory
 /.vs/
 /.vscode/
