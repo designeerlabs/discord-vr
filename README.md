@@ -34,3 +34,6 @@ You can select different options under "Attach" and "Align" to place the voice d
 
 # Join the Discord
 [https://discord.gg/KnCEf5jCDt](https://discord.gg/KnCEf5jCDt)
+
+# How to use with Unity
+Get the chromedriver that matches your version of Chrome from [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads) and place it in the StreamingAssets folder. Press play. If you would like to see exactly what chromedriver is doing, you can uncheck the "headless" boolean in ServerList.cs.
