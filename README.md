@@ -34,3 +34,12 @@ You can select different options under "Attach" and "Align" to place the voice d
 
 # Join the Discord
 [https://discord.gg/KnCEf5jCDt](https://discord.gg/KnCEf5jCDt)
+
+# Thanks to
+Thanks to the following projects that are being used:
+
+https://github.com/FortAwesome/Font-Awesome
+
+https://chromedriver.chromium.org
+
+https://github.com/GlitchEnzo/NuGetForUnity
