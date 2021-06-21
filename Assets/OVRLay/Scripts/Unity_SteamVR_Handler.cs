@@ -114,7 +114,12 @@ public class Unity_SteamVR_Handler : MonoBehaviour
 	public void VREventHandler(VREvent_t e)
 	{
 		if(debugLog)
-			Debug.Log("VR Event: " + e +" "+ e.eventType); // 200 trigger
+			Debug.Log("VR Event: " + e +" "+ e.eventType);
+
+		if (e.data.controller.button == 2)
+		{
+			DiscordVROverlay.UIManager.instance.StopPlaceOverlay();
+		}
 	}
 
 	bool SteamVRStartup()

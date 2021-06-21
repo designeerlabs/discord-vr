@@ -30,13 +30,31 @@ namespace DiscordVROverlay
         public Transform handL;
         public Transform handR;
 
+        public GameObject placeOutline;
+        public Button placeOverlayButton;
+        private bool placingOverlay;
+
         public string configFileName;
         public string version;
 
+        public Color colorInput = Color.white;
+        public Color colorHighlight = Color.white;
+
         private bool speakingOnly = false;
+
+        public static UIManager instance;
 
         void Awake()
         {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(this);
+            }
+
             attachSwitch.onSwitch.AddListener(ChangeAttach);
             alignSwitch.onSwitch.AddListener(ChangeAlign);
 
@@ -71,14 +89,14 @@ namespace DiscordVROverlay
                     break;
                 case 2:
                     drag.target = handR;
-                    ChangeScaleForce(.7f);
+                    ChangeScaleForce(1f);
                     ChangeAlignForce(2);
                     break;
                 case 3:
                     drag.target = null;
                     drag.transform.localPosition = Vector3.zero;
                     drag.transform.localEulerAngles = Vector3.zero;
-                    ChangeScaleForce(4f);
+                    ChangeScaleForce(.7f);
                     ChangeAlignForce(1);
                     break;
             }
@@ -96,7 +114,7 @@ namespace DiscordVROverlay
             switch (i)
             {
                 case 0: // left
-                    usersContainer.childAlignment = TextAnchor.UpperLeft;
+                    // usersContainer.childAlignment = TextAnchor.UpperLeft;
                     usersContainer.startAxis = GridLayoutGroup.Axis.Vertical;
                     switch (attachSwitch.currentIndex)
                     {
@@ -106,11 +124,11 @@ namespace DiscordVROverlay
                             ChangeScaleForce(.5f);
                             break;
                         case 1: // left
-                            newPosition = new Vector3(.39f, 0f, -.35f);
+                            newPosition = new Vector3(-.045f, 0f, 0f);
                             newRotation = new Vector3(90f, 0f, 0f);
                             break;
                         case 2: // right
-                            newPosition = new Vector3(.39f, 0f, -.35f);
+                            newPosition = new Vector3(-.045f, 0f, 0f);
                             newRotation = new Vector3(90f, 0f, 0f);
                             break;
                         case 3: // world
@@ -119,10 +137,10 @@ namespace DiscordVROverlay
                             break;
                     }
                     DiscordUserManager.instance.usernameAnchor = new Vector2(.5f, .5f);
-                    DiscordUserManager.instance.usernameAlignment = new Vector3(95f, 0f, 0f);
+                    DiscordUserManager.instance.usernameAlignment = new Vector3(-95f, 0f, 0f);
                     break;
                 case 1: // center
-                    usersContainer.childAlignment = TextAnchor.MiddleCenter;
+                    // usersContainer.childAlignment = TextAnchor.MiddleCenter;
                     usersContainer.startAxis = GridLayoutGroup.Axis.Horizontal;
                     switch (attachSwitch.currentIndex)
                     {
@@ -147,7 +165,7 @@ namespace DiscordVROverlay
                     DiscordUserManager.instance.usernameAlignment = new Vector3(0f, -95f, 0f);
                     break;
                 case 2: // right
-                    usersContainer.childAlignment = TextAnchor.UpperRight;
+                    // usersContainer.childAlignment = TextAnchor.UpperRight;
                     usersContainer.startAxis = GridLayoutGroup.Axis.Vertical;
                     switch (attachSwitch.currentIndex)
                     {
@@ -157,11 +175,11 @@ namespace DiscordVROverlay
                             ChangeScaleForce(.5f);
                             break;
                         case 1: // left
-                            newPosition = new Vector3(-.39f, 0f, -.35f);
+                            newPosition = new Vector3(.045f, 0f, 0f);
                             newRotation = new Vector3(90f, 0f, 0f);
                             break;
                         case 2: // right
-                            newPosition = new Vector3(-.39f, 0f, -.35f);
+                            newPosition = new Vector3(.045f, 0f, 0f);
                             newRotation = new Vector3(90f, 0f, 0f);
                             break;
                         case 3: // world
@@ -170,11 +188,11 @@ namespace DiscordVROverlay
                             break;
                     }
                     DiscordUserManager.instance.usernameAnchor = new Vector2(.5f, .5f);
-                    DiscordUserManager.instance.usernameAlignment = new Vector3(-95f, 0f, 0f);
+                    DiscordUserManager.instance.usernameAlignment = new Vector3(95f, 0f, 0f);
                     break;
             }
-            overlay.transform.localPosition = newPosition;
-            overlay.transform.localEulerAngles = newRotation;
+            overlay.transform.parent.localPosition = newPosition;
+            overlay.transform.parent.localEulerAngles = newRotation;
         }
 
         public void ChangeOpacityForce(float opacity)
@@ -195,6 +213,7 @@ namespace DiscordVROverlay
         public void ChangeScale()
         {
             overlay.widthInMeters = scaleSlider.value * 2f;
+            overlay.transform.localPosition = new Vector3(0f, -scaleSlider.value, 0f);
         }
 
         public void ChangeDragForce(float drag)
@@ -206,6 +225,39 @@ namespace DiscordVROverlay
         {
             // .05 - .3
             drag.timeCount = (dragSlider.value * .295f) + .05f;
+        }
+
+        public void StartStopPlaceOverlay()
+        {
+            if (placingOverlay)
+            {
+                StopPlaceOverlay();
+            }
+            else
+            {
+                StartPlaceOverlay();
+            }
+        }
+
+        public void StartPlaceOverlay()
+        {
+            ChangeAttachForce(3);
+            drag.target = handR;
+            overlay.transform.parent.localPosition = new Vector3(0f, -.05f, .2f);
+            placeOutline.SetActive(true);
+            placeOverlayButton.GetComponent<Image>().color = colorHighlight;
+            placeOverlayButton.GetComponentInChildren<Text>().text = "Press grip to stop placing";
+            placingOverlay = true;
+        }
+
+        public void StopPlaceOverlay()
+        {
+            if (!placingOverlay) return;
+            drag.target = null;
+            placeOutline.SetActive(false);
+            placeOverlayButton.GetComponent<Image>().color = colorInput;
+            placeOverlayButton.GetComponentInChildren<Text>().text = "Place in VR";
+            placingOverlay = false;
         }
 
         public void ToggleSpeakingOnly()
